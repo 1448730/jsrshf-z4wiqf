@@ -30,10 +30,12 @@ export class HomeComponent {
   readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
   housingLocationList: HousingLocation[] = [];
+  filteredLocationList: HousingLocation[] = [];
 
   housingService: HousingService = inject(HousingService);
 
   constructor() {
-  this.housingLocationList = this.housingService.getAllHousingLocations();
+    this.housingLocationList = this.housingService.getAllHousingLocations();
+    this.filteredLocationList = this.housingLocationList;
 }
 }
