@@ -5,7 +5,7 @@ import { HousingLocation } from './housinglocation';
   providedIn: 'root'
 })
 export class HousingService {
-  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
+ 
 
   url = 'http://localhost:3000/locations';
 
@@ -22,5 +22,5 @@ export class HousingService {
   submitApplication(firstName: string, lastName: string, email: string) {
     console.log(`Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`);
   }
-  constructor() { }
+  
 }
